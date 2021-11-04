@@ -1,0 +1,40 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[all]{xy}
+
+
+\usepackage{amsmath,amsthm,amssymb,color,latexsym}
+\usepackage{geometry}        
+\geometry{letterpaper}    
+\usepackage{graphicx}
+
+\newtheorem{problem}{Problem}
+\newtheorem{property}{Property}
+\newtheorem{definition}{Definition}
+\newtheorem{review}{Review}
+
+
+\newenvironment{solution}[1][\it{Solution}]{\textbf{#1. } }{$\square$}
+
+
+\begin{document}
+	\noindent Stat 310 \hfill  Discussion 12 \hfill Chi-Shian Dai
+\smallskip
+	\hrule
+\begin{enumerate}
+\item Suppose that $y_i=\mu+\epsilon_i$, where $i=1,\dots, n$ and the $\epsilon_i$ are independents errors with mean and variance $\sigma^2.$ Find the least squares estimate of $\mu$.
+\vspace{3cm}
+\item Find the least square estimate of $\beta$ for fitting the line $y=\beta x$ to points $(x_i,y_i)$ where $i=1,\dots,n.$
+\vspace{3cm}
+\item Suppose that we want to predict the value of a new observation, $Y_0$ at $x_0,$
+$$Y_0=\beta_0+\beta_1x_0+\epsilon_0$$
+by the estimate 
+$$\hat Y_0=\hat\beta_0+\hat \beta_1x_0$$
+\begin{enumerate}
+	\item Find the MSE of $\hat{Y_0}$
+\end{enumerate}
+\end{enumerate}
+
+
+
+\end{document}

@@ -1,0 +1,44 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[all]{xy}
+
+
+\usepackage{amsmath,amsthm,amssymb,color,latexsym}
+\usepackage{geometry}        
+\geometry{letterpaper}    
+\usepackage{graphicx}
+
+\newtheorem{problem}{Problem}
+\newtheorem{property}{Property}
+\newtheorem{definition}{Definition}
+
+
+\newenvironment{solution}[1][\it{Solution}]{\textbf{#1. } }{$\square$}
+
+
+\begin{document}
+	\noindent Stat 310 \hfill  Discussion 2 \hfill Chi-Shian Dai
+\smallskip
+	\hrule
+	\begin{definition}[Convergence in Probability]
+		Given a sequence of random variables $X_n$. We say $X_n$ convergence to a random variable $X$ in probability if and only if $\forall \epsilon>0$
+		$$P(|X_n-X|>\epsilon)\rightarrow 0.$$
+	\end{definition}\par
+\vspace*{2\baselineskip}
+	\begin{definition}{Convergence in Distribution}
+		Given a sequence of random variables $X_n$. We say $X_n$ convergence to a random variable $X$ in distribution if and only if PDF/PMF/CDF of $X_n$ convergence to  PDF/PMF/CDF of $X$.
+	\end{definition}
+\vspace*{2\baselineskip}
+	\begin{problem}
+	Let $U_1,\dots,U_n$ be random variables. $U_n$ has distribution  
+	$Exp(n)$. Claim $U_n$ convergence to 0 in probability.
+	\end{problem}
+	\vspace*{2\baselineskip}
+	\begin{problem}
+		Let $U_1,\dots,U_n$ be independent Unif(0,1) random variables, $X_{(n)}:=\max \{U_1,\dots, U_n\}$. Prove that $n(1-X_{(n)})$ convergence in distribution to $Exp(1)$.
+	\end{problem}
+\vspace*{2\baselineskip}
+\begin{problem}
+Let $X_1,\dots,X_{100}$ be independent Possion(1) random variables. Use normal approximation to approximate the probability that $\sum_{i=1}^{100} X_i$ is between 90 and 110.
+\end{problem}
+\end{document}

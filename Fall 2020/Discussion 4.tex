@@ -1,0 +1,44 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[all]{xy}
+
+
+\usepackage{amsmath,amsthm,amssymb,color,latexsym}
+\usepackage{geometry}        
+\geometry{letterpaper}    
+\usepackage{graphicx}
+
+\newtheorem{problem}{Problem}
+\newtheorem{property}{Property}
+\newtheorem{definition}{Definition}
+\newtheorem{review}{Review}
+
+
+\newenvironment{solution}[1][\it{Solution}]{\textbf{#1. } }{$\square$}
+
+
+\begin{document}
+	\noindent Stat 310 \hfill  Discussion 4 \hfill Chi-Shian Dai
+\smallskip
+	\hrule
+
+\begin{problem}
+Consider samples $X_1,\dots,X_n$ are from Simple Random Sampling(sample without replacement) with population size  $N$. From the Lecture, we know that there is an unbias estimator for $\sigma^2$,
+$$\frac{S^2}{n}(1-\frac{n}{N}),$$
+where 
+$$S^2=\frac{1}{n-1}\sum_{i=1}^{n} (X_i-\bar {X}_n)^2.$$
+Please proof the following statements.
+\begin{itemize}
+	\item [(i)] If $X_1,\cdots, X_n$ are either 1 or 0, then
+	$\hat{\sigma^2}(\bar{X}_n):=\frac{\bar{X}_n(1-\bar{X}_n)}{n-1}\left(1-\frac{n}{N}\right) 
+	$ is an unbias estimator for $\sigma^2$.
+	\item [(ii)] $\sup_p \hat{\sigma^2}(p)=\frac{1}{4(n-1)}\left(1-\frac{n}{N}\right) $.
+	\item [(iii)]  Apply CLT, then
+	$\bar{X}_n\pm z_{\alpha/2}\frac{1}{2}\sqrt{  \frac{1}{n-1}\left(1-\frac{n}{N}\right) }$ is a $(1-\alpha)$ confidence interval for all $\mu=E[X]$. 
+\end{itemize}
+\end{problem}
+\vspace*{2\baselineskip}
+\begin{problem}
+	Under Simple Random Sampling, find an unbias estimator for $\mu^2$.
+\end{problem}
+\end{document}

@@ -1,0 +1,45 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[all]{xy}
+
+
+\usepackage{amsmath,amsthm,amssymb,color,latexsym}
+\usepackage{geometry}        
+\geometry{letterpaper}    
+\usepackage{graphicx}
+
+\newtheorem{problem}{Problem}
+\newtheorem{property}{Property}
+\newtheorem{definition}{Definition}
+\newtheorem{review}{Review}
+
+
+\newenvironment{solution}[1][\it{Solution}]{\textbf{#1. } }{$\square$}
+
+
+\begin{document}
+	\noindent Stat 310 \hfill  Discussion 6 \hfill Chi-Shian Dai
+\smallskip
+	\hrule
+	\vspace*{2\baselineskip}
+
+\begin{problem}
+Let $X_1,\dots,X_n$ be i.i.d. random variables with the density function
+$$f(x|\theta)=(\theta+1)x^{\theta},\qquad 0\leq x\leq 1$$
+\begin{itemize}
+	\item[a.] Find the method of moments estimator of $\theta.$
+	\item[b.] Find the MLE of $\theta.$
+	\item[c.] Find the asymptotic variance of the MLE.
+\end{itemize}
+	\end{problem}
+\vspace*{8\baselineskip}
+\begin{problem}
+ Let $X_1,\dots,X_n$ be i.i.d. uniform on $[0,\theta]$.
+ \begin{itemize}
+ 	\item[a.] Find the method of moments estimate of $\theta$.
+ 	\item[b.] Find MLE of $\theta$
+ 	\item[c.] Find mean and variance of MLE. 
+ \end{itemize}
+
+\end{problem}
+\end{document}

@@ -1,0 +1,39 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[all]{xy}
+
+
+\usepackage{amsmath,amsthm,amssymb,color,latexsym}
+\usepackage{geometry}        
+\geometry{letterpaper}    
+\usepackage{graphicx}
+
+\newtheorem{problem}{Problem}
+\newtheorem{property}{Property}
+\newtheorem{definition}{Definition}
+\newtheorem{review}{Review}
+
+
+\newenvironment{solution}[1][\it{Solution}]{\textbf{#1. } }{$\square$}
+
+
+\begin{document}
+	\noindent Stat 310 \hfill  Discussion 10 \hfill Chi-Shian Dai
+\smallskip
+	\hrule
+\begin{enumerate}
+\item We have data of control group $X_1,\dots, X_n \sim N(\mu_x,\sigma^2_x).$ And the data of treatment $Y_1,\dots,Y_m\sim N(\mu_y,\sigma^2_y).$
+ These two group of data are independent. We want to compare the mean of control group and treatement group.
+ \begin{enumerate}
+ 	\item What is the variance of $\bar X-\bar Y$
+ 	\item Assume $\sigma^2_x=\sigma^2_y$. What is the estimated variance of previous question?
+ 	\item With a significance level 0.05, what is the rejection region of the test of the null hypothesis $H_0:\mu_x=\mu_y$ versus $H_A:\mu_x>\mu_y.$ 
+ 	\item What is the power of the test if $\mu_x=\mu_y+1$
+ 	\item Do previous 3 questions again with the extra assumption that $\sigma^2_x=\sigma^2_y=1.$
+ 	
+ \end{enumerate}
+ 
+
+
+\end{enumerate}
+\end{document}

@@ -1,0 +1,31 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[all]{xy}
+
+
+\usepackage{amsmath,amsthm,amssymb,color,latexsym}
+\usepackage{geometry}        
+\geometry{letterpaper}    
+\usepackage{graphicx}
+
+\newtheorem{problem}{Problem}
+\newtheorem{property}{Property}
+\newtheorem{definition}{Definition}
+\newtheorem{review}{Review}
+
+
+\newenvironment{solution}[1][\it{Solution}]{\textbf{#1. } }{$\square$}
+
+
+\begin{document}
+	\noindent Stat 310 \hfill  Discussion 9 \hfill Chi-Shian Dai
+\smallskip
+	\hrule
+\begin{enumerate}
+\item Given $X_1,\dots, X_n \sim Unif(0,\theta)$. Please run general likelihood ratio test with $H_0:\theta=1$ verse $H_1: \theta\ne 1.$
+
+\vspace{8 cm}
+\item We observe independent data $X\sim Bin(n_1,p_1)$, and $Y\sim Bin(n_2,p_2)$. Consider the hypothesis testing $H_0:p_1=p_2$ verse $H_1: p_1\ne p_2.$
+Please  run general likelihood ratio test with $-2\log\Lambda$.
+\end{enumerate}
+\end{document}

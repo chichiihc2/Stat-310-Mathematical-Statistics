@@ -1,0 +1,39 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[all]{xy}
+
+
+\usepackage{amsmath,amsthm,amssymb,color,latexsym}
+\usepackage{geometry}        
+\geometry{letterpaper}    
+\usepackage{graphicx}
+
+\newtheorem{problem}{Problem}
+\newtheorem{property}{Property}
+\newtheorem{definition}{Definition}
+\newtheorem{review}{Review}
+
+
+\newenvironment{solution}[1][\it{Solution}]{\textbf{#1. } }{$\square$}
+
+
+\begin{document}
+	\noindent Stat 310 \hfill  Discussion 11 \hfill Chi-Shian Dai
+\smallskip
+	\hrule
+\begin{enumerate}
+\item We hvae 12 mouse. 6 big , 6 small. Assign three different drugs. Then, measure how many days did they survive. The result shows in the following table.
+Please test whether "Drug" is significant or not.
+
+\end{enumerate}
+
+\begin{table}[h]
+	\footnotesize
+	\begin{tabular} {cccc}
+		&Drug 1&Drug 2& Drug3\\
+		Big	& 5, 7 & 11, 13 & 4,4\\
+		Small&  5,3 &7,7  & 2,2
+	\end{tabular}
+\end{table}
+
+\end{document}
